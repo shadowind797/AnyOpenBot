@@ -61,7 +61,7 @@ async def handle_url(message: types.Message):
         await status.edit_text(f"❌ Не удалось загрузить страницу: {e}")
         return
 
-    await status.edit_text("🧠 Отправляю нейросети...")
+    await status.edit_text("🧠 Читаю статью...")
 
     try:
         result = await call_llm(body, PROXY_URL, MODEL_NAME)
